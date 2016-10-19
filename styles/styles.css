@@ -1,0 +1,49 @@
+ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+li{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin:0;
+}
+
+.open{
+	background-color: #4CAF50;
+}
+
+.closed{
+	background-color: #F44336;
+}
+
+body {
+	left: 0px;
+	top: 0px;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+}
+
+.inline{
+	float:right;
+}
+
+.status{
+	float: right;
+	position:absolute;
+	right:3%;
+	padding-bottom:16px;
+}
+
+button{
+    background:none;
+    border:none;
+    padding: 16px;
+    padding-right:100%;
+    padding-left:3%;
+    font-size: 16px;
+    cursor: pointer;
+
+}
