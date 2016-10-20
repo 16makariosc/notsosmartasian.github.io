@@ -8,6 +8,7 @@ li{
     padding-top: 0px;
     padding-bottom: 0px;
     margin:0;
+    overflow:hidden;
 }
 
 .open{
@@ -31,10 +32,8 @@ body {
 }
 
 .status{
-    float: right;
     position:absolute;
     right:3%;
-    padding-bottom:16px;
 }
 
 button{
@@ -43,7 +42,7 @@ button{
     padding: 16px;
     padding-right:100%;
     padding-left:3%;
-    font-size: 16px;
+    font-size: 100%;
     cursor: pointer;
 
 }

@@ -1,17 +1,6 @@
 
 $(document).ready(function(){
 
-var d = new Date();
-var m = d.getMinutes();
-var t = d.getHours();
-var w = d.getDay();
-
-console.log(w);
-console.log(t);
-console.log(m);
-
-t = t+(m/60);
-
 function closeall(){
 
     $('.open').toggleClass('open closed');
@@ -57,8 +46,20 @@ function closeOne(id){
 
 window.onload = function () {
 
-	switch(w){
-		case 0: switch (true){
+	var d = new Date();
+    var m = d.getMinutes();
+    var t = d.getHours();
+    var w = d.getDay();
+
+    console.log(w);
+    console.log(t);
+    console.log(m);
+
+	t = t+(m/60);
+
+
+	switch(true){
+		case (w == 0): switch (true){
 					case (t < 11):
 						 break;
 					case (t > 11 && x < 3):
@@ -70,13 +71,14 @@ window.onload = function () {
 						 openOne('nch');
 						 openOne('commons');
 					}
-		case 4: switch (true){
+		case (w >= 1 && w <= 4): switch (true) {
 					case (t < 7.5):
 						break;
 					case (t >= 7.5 && t < 10):
 						 openOne('nch');
-					case (t >= 8.5 && t < 10):
+					case (t >= 8.5 && t < 10.5):
 						 openOne('kceh');
+						 break;
 					case (t >= 11 && t < 19):
 						 openOne('houston')
 					case (t >= 11 && t < 14):
