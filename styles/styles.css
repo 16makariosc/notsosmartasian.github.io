@@ -1,40 +1,40 @@
 ul{
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 li{
-	padding-top: 0px;
-	padding-bottom: 0px;
-	margin:0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin:0;
 }
 
 .open{
-	background-color: #4CAF50;
+    background-color: #4CAF50;
 }
 
 .closed{
-	background-color: #F44336;
+    background-color: #F44336;
 }
 
 body {
-	left: 0px;
-	top: 0px;
-	margin: 0px;
-	border: 0px;
-	padding: 0px;
+    left: 0px;
+    top: 0px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
 }
 
 .inline{
-	float:right;
+    float:right;
 }
 
 .status{
-	float: right;
-	position:absolute;
-	right:3%;
-	padding-bottom:16px;
+    float: right;
+    position:absolute;
+    right:3%;
+    padding-bottom:16px;
 }
 
 button{

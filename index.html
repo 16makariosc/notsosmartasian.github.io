@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
-	<script src="scripts/main.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script
+  src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+  <script src="scripts/main.js"></script>
 	<title>Penn DineTrack</title>
 </head>
+
 <body>
 	<ul>
-		<li id = "commons" class = "open"><button>1920&nbspCommons<span class = "status">OPEN</span></button></li>
-		<li id = "kceh" class = "open"><button>KCEH<span class = "status">OPEN</span></button></li>
-		<li id = "nch" class = "open"><button>NCH<span class = "status">OPEN</span></button></li>
-		<li id = "houston" class = "open"><button>Houston&nbspHall<span class = "status">OPEN</span></button></li>
+		<li id = "commons" class = "closed"><button>1920&nbspCommons<span class = "status">CLOSED</span></button></li>
+		<li id = "kceh" class = "closed"><button>KCEH<span class = "status">CLOSED</span></button></li>
+		<li id = "nch" class = "closed"><button>NCH<span class = "status">CLOSED</span></button></li>
+		<li id = "houston" class = "closed"><button>Houston&nbspHall<span class = "status">CLOSED</span></button></li>
 </body>
+
 </html>
 
 
+
 <!-- Debugging/JS Testing Buttons -->
+<button onclick="openOne('commons')">OpenCommons</button> 
+<button onclick="openOne('kceh')">OpenKCEH</button> 
+
 <button onclick="closeall()">Close</button><br>
 <button onclick="openall()">Open</button> 
-<button onclick="openSpecific('commons')">Open&nbspCommons</button> 
-<button onclick="openSpecific('kceh')">Open&nbspHouston</button> 
