@@ -2,32 +2,13 @@
 $(document).ready(function(){
 
 function closeall(){
-
     $('.open').toggleClass('open closed');
     $(".status").html("CLOSED");
-
-//	var elements = document.querySelectorAll(".open");
-//	var status = document.getElementsByClassName(".status");
-//	$(".open").removeClass("open").addClass("closed");
-//	for(i = 0; i < elements.length; i++){
-//		elements[i].classList.remove("open");
-//	    elements[i].classList.add("closed");
-//	    }
 	}
 
 function openall(){
-
-
 	$(".closed").toggleClass('closed open');
 	$(".status").html("OPEN");
-
-//	var elements = document.querySelectorAll(".closed");
-//	var status = document.querySelectorAll(".status");
-//	for(i = 0; i < elements.length; i++){
-//		elements[i].classList.remove("closed");
-//		elements[i].classList.add("open");
-//		status[i].classList.innerHTML = "OPEN";
-//	}
 }
 
 function openOne(id){
@@ -44,6 +25,15 @@ function closeOne(id){
 		$("#"+id+" .status").html("CLOSED");
 	}	
 }
+
+function toggleElement(id){
+	$('#'+id).slideToggle(175);
+}
+
+function hideElement(id){
+	$('#'+id).hide();
+}
+
 
 function inRange(x, min, max){
 	return (x > min && x < max);
@@ -127,7 +117,11 @@ function weekdayTimes(t){
 }
 
 
-window.onload = function () {
+window.onload = function (){
+
+	document.getElementById('commons').addEventListener('click', function(){
+		toggleElement('commonsmenu');
+	}, false);
 
 	var d = new Date();
     var m = d.getMinutes();
