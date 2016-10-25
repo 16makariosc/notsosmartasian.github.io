@@ -59,6 +59,11 @@ body {
     text-align: middle;
 }
 
+#footer{
+	font-size:12px;
+	margin:0px;
+}
+
 button{
     background:none;
     border:none;

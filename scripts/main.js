@@ -14,19 +14,9 @@ function openall(){
 function openOne(id, nextOpenTime){
 	if ($("#"+id).hasClass('closed')){
 		$("#"+id).toggleClass('closed open');
-		if (parseInt(nextOpenTime) > 1) {
-           $("#"+id+" .status").html("OPEN for " + parseInt(nextOpenTime) + " more hours");
-		}
-		else if (parseInt(nextOpenTime) ==  1) {
-			$("#"+id+" .status").html("OPEN for " + parseInt(nextOpenTime) + " more hour");
-		}
-		else {
-		   $("#"+id+" .status").html("OPEN for " + parseInt(nextOpenTime*60) + " more minutes");
-		}
-		console.log(id+' has opened')
+        $("#"+id+" .status").html("OPEN for " + parseInt(nextOpenTime) + ":" + parseInt((nextOpenTime - parseInt(nextOpenTime))*60));
 	}
 }
-
 function closeOne(id){
 	if ($("#"+id).hasClass('open')){
 		$("#"+id).toggleClass('open closed');
@@ -189,14 +179,14 @@ window.onload = function (){
     var t = d.getHours();
     var w = d.getDay();
 
-	console.log (inRange(3.877, 2, 5));
-    console.log('w'+w);
-    console.log(t);
-    console.log(m);
+//	console.log (inRange(3.877, 2, 5));
+//    console.log('w'+w);
+//    console.log(t);
+//    console.log(m);
 
 	t = t+(m/60);
 
-	console.log(t);
+//	console.log(t);
 
 	switch(w){
 		case 0 : sundayTimes(t); break;
