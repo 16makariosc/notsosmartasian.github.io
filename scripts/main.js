@@ -14,7 +14,8 @@ function openall(){
 function openOne(id, nextOpenTime){
 	if ($("#"+id).hasClass('closed')){
 		$("#"+id).toggleClass('closed open');
-        $("#"+id+" .status").html("OPEN for " + parseInt(nextOpenTime) + ":" + parseInt((nextOpenTime - parseInt(nextOpenTime))*60));
+		min = parseInt((nextOpenTime - parseInt(nextOpenTime))*60);
+        $("#"+id+" .status").html("OPEN for " + parseInt(nextOpenTime) + ":" + ("0" + min).slice(-2));
 	}
 }
 function closeOne(id){
