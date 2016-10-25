@@ -9,7 +9,7 @@ def getMenu(cafe, meal):
 	content = driver.find_elements_by_css_selector('section#panel-daypart-menu-'+str(meal)+' .bg.dotted-leader-content')
 	return content
 
-menu = getMenu('new-college-house', 1)
+menu = getMenu('new-college-house', 2)
 for x in menu:
 	print x.text
 
