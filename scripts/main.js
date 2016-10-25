@@ -11,10 +11,18 @@ function openall(){
 	$(".status").html("OPEN");
 }
 
-function openOne(id){
+function openOne(id, nextOpenTime){
 	if ($("#"+id).hasClass('closed')){
 		$("#"+id).toggleClass('closed open');
-		$("#"+id+" .status").html("OPEN");
+		if (parseInt(nextOpenTime) > 1) {
+           $("#"+id+" .status").html("OPEN for " + parseInt(nextOpenTime) + " more hours");
+		}
+		else if (parseInt(nextOpenTime) ==  1) {
+			$("#"+id+" .status").html("OPEN for " + parseInt(nextOpenTime) + " more hour");
+		}
+		else {
+		   $("#"+id+" .status").html("OPEN for " + parseInt(nextOpenTime*60) + " more minutes");
+		}
 		console.log(id+' has opened')
 	}
 }
@@ -41,78 +49,107 @@ function inRange(x, min, max){
 
 function fridayTimes(t){
 	if (inRange(t, 7.5, 10)){
-		openOne('nch');
+		openOne('nch', 10-t);
+	}
+	if (inRange(t, 8, 10)){
+		openOne('mcclelland', 10-t);
+	}
+	if (inRange(t, 8, 15)){
+		openOne('accenture', 15-t);
 	}
 	if (inRange(t, 8.5, 10.5)){
-		openOne('kceh');
+		openOne('kceh', 10.5-t);
 	}
 	if (inRange(t, 11, 17)){
-		openOne('houston');
+		openOne('houston', 17-t);
+	}
+	if (inRange(t, 11, 20)){
+		openOne('frontera', 20-t);
 	}
 	if (inRange(t, 11, 14)){
-		openOne('nch');
-		openOne('kceh');
-		openOne('commons');
+		openOne('nch', 14-t);
+		openOne('kceh', 14-t);
+		openOne('commons', 14-t);
+		openOne('mcclelland', 14-t);
 	}
 	if (inRange(t, 17, 19)){
-		openOne('nch');
+		openOne('nch', 19-t);
 	}
 	if (inRange(t, 17, 19.5)){
-		openOne('commons');
+		openOne('commons', 19.5-t);
 	}
 	if (inRange(t, 17, 21)){
-		openOne('kceh');
+		openOne('kceh', 21-t);
 	}
 }
 
 function saturdayTimes(t){
 	if (inRange(t, 11, 15)){
-		openOne('nch');
-		openOne('commons');
+		openOne('nch', 15-t);
+		openOne('commons', 15-t);
 	}
 	if (inRange(t, 17, 19)){
-		openOne('nch');
+		openOne('nch', 19-t);
 	}
 	if (inRange(t, 17, 19.5)){
-		openOne('commons');
+		openOne('commons', 19.5-t);
 	}
 }
 
 function sundayTimes(t){
 	if (inRange(t, 11, 15)){
-		openOne('nch');
-		openOne('commons');
+		openOne('nch', 15-t);
+		openOne('commons', 15-t);
+	}
+	if (inRange(t, 11, 22)){
+		openOne('frontera', 22-t);
 	}
 	if (inRange(t, 12, 19)){
-		openOne('houston');
+		openOne('houston', 19-t);
 	}
 	if (inRange(t, 17, 20)){
-		openOne('nch');
-		openOne('commons');
+		openOne('nch', 20-t);
+		openOne('commons', 20-t);
+	}
+	if (inRange(t, 20, 23.983)){
+		openOne('mcclelland', 23.983-t);
 	}
 }
 
 function weekdayTimes(t){
 	if (inRange(t, 7.5, 10)){
-		openOne('nch');
+		openOne('nch', 10-t);
+	}
+	if (inRange(t, 8, 10)){
+		openOne('mcclelland', 10-t);
+	}
+	if (inRange(t, 8, 18)){
+		openOne('accenture', 18-t);
 	}
 	if (inRange(t, 8.5, 10.5)){
-		openOne('kceh');
+		openOne('kceh', 10.5-t);
 	}
 	if (inRange(t, 11, 19)){
-		openOne('houston');
+		openOne('houston', 19-t);
+	}
+	if (inRange(t, 11, 22)){
+		openOne('frontera', 22-t);
 	}
 	if (inRange(t, 11, 14)){
-		openOne('nch');
-		openOne('kceh');
-		openOne('commons');
+		openOne('nch', 14-t);
+		openOne('kceh', 14-t);
+		openOne('commons', 14-t);
+		openOne('mcclelland', 14-t);
 	}
 	if (inRange(t, 17, 20)){
-		openOne('nch');
+		openOne('nch', 20-t);
 	}
 	if (inRange(t, 17, 21)){
-		openOne('kceh');
-		openOne('commons');
+		openOne('kceh', 21-t);
+		openOne('commons', 21-t);
+	}
+	if (inRange(t, 20, 23.983)){
+		openOne('mcclelland', 23.983-t);
 	}
 }
 
@@ -121,6 +158,30 @@ window.onload = function (){
 
 	document.getElementById('commons').addEventListener('click', function(){
 		toggleElement('commonsmenu');
+	}, false);
+
+	document.getElementById('kceh').addEventListener('click', function(){
+		toggleElement('kcehmenu');
+	}, false);
+
+	document.getElementById('nch').addEventListener('click', function(){
+		toggleElement('nchmenu');
+	}, false);
+
+	document.getElementById('houston').addEventListener('click', function(){
+		toggleElement('houstonmenu');
+	}, false);
+
+	document.getElementById('mcclelland').addEventListener('click', function(){
+		toggleElement('mcclellandmenu');
+	}, false);
+
+	document.getElementById('frontera').addEventListener('click', function(){
+		toggleElement('fronteramenu');
+	}, false);
+
+	document.getElementById('accenture').addEventListener('click', function(){
+		toggleElement('accenturemenu');
 	}, false);
 
 	var d = new Date();
@@ -138,12 +199,12 @@ window.onload = function (){
 	console.log(t);
 
 	switch(w){
-		case 0 : sundayTimes(t);
-		case 1 : weekdayTimes(t);
-		case 2 : weekdayTimes(t);
-		case 3 : weekdayTimes(t);
-		case 4 : weekdayTimes(t);
-		case 5 : fridayTimes(t);
+		case 0 : sundayTimes(t); break;
+		case 1 : weekdayTimes(t); break;
+		case 2 : weekdayTimes(t); break;
+		case 3 : weekdayTimes(t); break;
+		case 4 : weekdayTimes(t); break;
+		case 5 : fridayTimes(t); break;
 		case 6 : saturdayTimes(t);
 		}
 	} 

@@ -2,6 +2,7 @@
 
 html{
     font-family: 'Noto Sans Kannada', sans-serif;
+    overflow-x: hidden;
 }
 
 ul{
@@ -61,10 +62,12 @@ body {
 button{
     background:none;
     border:none;
-    padding: 16px;
+    padding: 1%;
+    padding-bottom: 16px;
+    padding-top: 16px;
     padding-right:100%;
     padding-left:3%;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
 
 }
