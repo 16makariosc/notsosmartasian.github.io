@@ -51,6 +51,9 @@ function fridayTimes(t){
 	if (inRange(t, 8.5, 10.5)){
 		openOne('kceh', 10.5-t);
 	}
+	if (inRange(t, 9, 16)){
+		openOne('nchretail', 16-t);
+	}
 	if (inRange(t, 11, 17)){
 		openOne('houston', 17-t);
 	}
@@ -75,6 +78,9 @@ function fridayTimes(t){
 }
 
 function saturdayTimes(t){
+	if (inRange(t, 9, 16)){
+		openOne('nchretail', 16-t);
+	}
 	if (inRange(t, 11, 15)){
 		openOne('nch', 15-t);
 		openOne('commons', 15-t);
@@ -120,6 +126,9 @@ function weekdayTimes(t){
 	if (inRange(t, 8.5, 10.5)){
 		openOne('kceh', 10.5-t);
 	}
+	if (inRange(t, 9, 22)){
+		openOne('nchretail', 22-t);
+	}
 	if (inRange(t, 11, 19)){
 		openOne('houston', 19-t);
 	}
@@ -138,6 +147,9 @@ function weekdayTimes(t){
 	if (inRange(t, 17, 21)){
 		openOne('kceh', 21-t);
 		openOne('commons', 21-t);
+	}
+	if (inRange(t, 20, 22)){
+		openOne('nchmeqleq', 22-t);
 	}
 	if (inRange(t, 20, 23.983)){
 		openOne('mcclelland', 23.983-t);
