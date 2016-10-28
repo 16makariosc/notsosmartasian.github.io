@@ -149,7 +149,7 @@ function weekdayTimes(t){
 		openOne('commons', 21-t);
 	}
 	if (inRange(t, 20, 22)){
-		openOne('nchmeqleq', 22-t);
+		openOne('nchmealeq', 22-t);
 	}
 	if (inRange(t, 20, 23.983)){
 		openOne('mcclelland', 23.983-t);
