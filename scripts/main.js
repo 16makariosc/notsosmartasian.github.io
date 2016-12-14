@@ -14,6 +14,7 @@ function openall(){
 function openOne(id, nextOpenTime){
 	if ($("#"+id).hasClass('closed')){
 		$("#"+id).toggleClass('closed open');
+//		$("#"+id).prependTo($("ul li:first"));
 		min = parseInt((nextOpenTime - parseInt(nextOpenTime))*60);
         $("#"+id+" .status").html("OPEN <span class = 'small'> for </span> " + parseInt(nextOpenTime) + "H " + ("0" + min).slice(-2)+"M");
 	}
