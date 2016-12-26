@@ -1,7 +1,11 @@
+import xml.etree.cElementTree as ET
 from selenium import webdriver
 
 #cafe: 1920-commons; kings-court-english-house; new-college-house; houston-market
 #meals: 1 = first meal of the day, 2 = second meal of the day, 3 = third meal of the day
+
+cafes = ["1920-commons", "kings-court-english-house", "new-college-house", "mcclelland", "houston-market"]
+meals = [1, 2, 3]
 
 def getMenu(cafe, meal): 
 	driver = webdriver.PhantomJS()
@@ -9,7 +13,15 @@ def getMenu(cafe, meal):
 	content = driver.find_elements_by_css_selector('section#panel-daypart-menu-'+str(meal)+' .bg.dotted-leader-content')
 	return content
 
-menu = getMenu('new-college-house', 2)
-for x in menu:
-	print x.text
+root = ET.Element("menus")
 
+for cafe in cafes:
+	cafeElement = ET.SubElement(root, "cafe", name=cafe)
+	for meal in meals:
+		mealElement = ET.SubElement(cafeElement, "meal", name="meal " + str(meal))
+		menu = getMenu(cafe, meal)
+		for item in menu:
+			ET.SubElement(cafeElement).text = item
+
+tree = ET.ElementTree(root)
+tree.write("meals.xml")

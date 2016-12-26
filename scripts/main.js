@@ -1,4 +1,13 @@
 
+var commonsTimes = new Map();
+var kcehTimes = new Map();
+var mcclellandTimes = new Map();
+var nchTimes = new Map();
+var nccmealeqTimes = new Map();
+var houstonTimes = new Map();
+var fronteraTimes = new Map();
+var accentureTimes = new Map();
+
 $(document).ready(function(){
 
 function closeall(){
@@ -11,15 +20,20 @@ function openall(){
 	$(".status").html("OPEN");
 }
 
-function openOne(id, nextOpenTime){
+function openOne(id, openUntil){
 	if ($("#"+id).hasClass('closed')){
 		$("#"+id).toggleClass('closed open');
 //		$("#"+id).prependTo($("ul li:first"));
-		min = parseInt((nextOpenTime - parseInt(nextOpenTime))*60);
-        $("#"+id+" .status").html("OPEN <span class = 'small'> for </span> " + parseInt(nextOpenTime) + "H " + ("0" + min).slice(-2)+"M");
+		min = parseInt((openUntil - parseInt(openUntil))*60);
+        $("#"+id+" .status").html("OPEN <span class = 'small'> for </span> " + parseInt(openUntil) + "H " + ("0" + min).slice(-2)+"M");
 	}
 }
-function closeOne(id){
+
+function addToMenu(id, item){
+	$("#"+id+"menu").append('<li class = "menu">'+item+'</li>');
+}
+
+function closeOne(id, closedUntil){
 	if ($("#"+id).hasClass('open')){
 		$("#"+id).toggleClass('open closed');
 		$("#"+id+" .status").html("CLOSED");
@@ -193,10 +207,7 @@ window.onload = function (){
     var t = d.getHours();
     var w = d.getDay();
 
-//	console.log (inRange(3.877, 2, 5));
-//    console.log('w'+w);
-//    console.log(t);
-//    console.log(m);
+    addToMenu("commons", "crap and more");
 
 	t = t+(m/60);
 

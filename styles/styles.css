@@ -3,6 +3,7 @@
 html{
     font-family: 'Noto Sans Kannada', sans-serif;
     overflow-x: hidden;
+    white-space: nowrap;
 }
 
 ul{
@@ -15,6 +16,7 @@ li{
 	padding-top: 0px;
 	padding-bottom: 0px;
 	margin:0;
+
 }
 
 .open{
@@ -72,9 +74,16 @@ button{
     padding-top: 16px;
     padding-right:100%;
     padding-left:3%;
-    font-size: 20px;
+    font-size: 125%;
     cursor: pointer;
 
+}
+
+.banner{
+	background-color: yellow;
+	text-align: center;
+	padding: 1%;
+	font-size: 100%;
 }
 
 .small{
