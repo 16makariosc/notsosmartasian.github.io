@@ -59,7 +59,7 @@ function printMenu(id, meal){
     	url:'data/meals.xml',
     	dataType: "xml",
     	success:function(xml) {
-        	var result = $(xml).find("cafe[name=" + id +"]").children().find("meal[name=meal " + meal).text();
+        	var result = $(xml).find("cafe[name=" + id +"]").children().find("meal[name=meal " + meal+"]").text();
         	console.log(result);
     	}
 	});
