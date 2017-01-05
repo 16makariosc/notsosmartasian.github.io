@@ -63,7 +63,7 @@ function printMenu(id, meal){
         	var result = $(xml).find("cafe[name=" + id +"]").find("meal[name=meal" + meal+"]").each(function() { 
         		items.push($(this).text());
         	});
-        	console.log(result);
+        	console.log(items);
     	}
 	});
 }
