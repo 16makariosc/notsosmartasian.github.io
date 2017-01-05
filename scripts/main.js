@@ -152,7 +152,8 @@ function sundayTimes(t){
 	if (inRange(t, 17, 20)){			//dinner 
 		openOne('new-college-house', 20-t);
 		openOne('1920-commons', 20-t);
-		loadMenu('new-college-house', )
+		loadMenu('new-college-house', 2);
+		loadMenu('1920-commons', 2);
 	}
 	if (inRange(t, 20, 23.983)){
 		openOne('mcclelland', 23.983-t);
