@@ -59,8 +59,8 @@ function printMenu(id, meal){
     	url:'data/meals.xml',
     	dataType: "xml",
     	success:function(xml) {
-        var result = $(xml).find("cafe[name=" + id +"]").children().find("meal[name=meal " + str(meal)).text();
-        console.log(result);
+        	var result = $(xml).find("cafe[name=" + id +"]").children().find("meal[name=meal " + str(meal)).text();
+        	console.log(result);
     	}
 	});
 }
@@ -236,7 +236,4 @@ window.onload = function (){
 		printMenu("1920-commons", 1);
 
 	} 
-});
-
-
 });
