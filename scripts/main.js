@@ -81,7 +81,7 @@ function fridayTimes(t){
 	}
 	if (inRange(t, 8.5, 10.5)){
 		openOne('kings-court-english-house', 10.5-t);
-		loadMenu('kings-court-english-house', )
+		loadMenu('kings-court-english-house', 1);
 	}
 	if (inRange(t, 9, 16)){
 		openOne('new-college-houseretail', 16-t);
