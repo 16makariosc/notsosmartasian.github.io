@@ -62,7 +62,7 @@ function printMenu(id, meal){
         var result = $(xml).find("cafe[name=" + id +"]").children().find("meal[name=meal " + str(meal)).text();
         console.log(result);
     	}
-	}
+	});
 }
 
 function fridayTimes(t){
