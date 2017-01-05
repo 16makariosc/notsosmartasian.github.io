@@ -161,17 +161,20 @@ function sundayTimes(t){
 }
 
 function weekdayTimes(t){
-	if (inRange(t, 7.5, 10)){
+	if (inRange(t, 7.5, 10)){			//breakfast
 		openOne('new-college-house', 10-t);
+		loadMenu('new-college-house', 1);
 	}
 	if (inRange(t, 8, 10)){
 		openOne('mcclelland', 10-t);
+		loadMenu('mcclelland', 1);
 	}
 	if (inRange(t, 8, 18)){
 		openOne('accenture', 18-t);
 	}
 	if (inRange(t, 8.5, 10.5)){
 		openOne('kings-court-english-house', 10.5-t);
+		loadMenu('kings-court-english-house', 1);
 	}
 	if (inRange(t, 9, 22)){
 		openOne('new-college-houseretail', 22-t);
@@ -182,18 +185,25 @@ function weekdayTimes(t){
 	if (inRange(t, 11, 22)){
 		openOne('frontera', 22-t);
 	}
-	if (inRange(t, 11, 14)){
+	if (inRange(t, 11, 14)){			//lunch
 		openOne('new-college-house', 14-t);
 		openOne('kings-court-english-house', 14-t);
 		openOne('1920-commons', 14-t);
 		openOne('mcclelland', 14-t);
+		loadMenu('new-college-house', 2);
+		loadMenu('kings-court-english-house', 2);
+		loadMenu('1920-commons', 2);
+		loadMenu('mcclelland', 2);
 	}
-	if (inRange(t, 17, 20)){
+	if (inRange(t, 17, 20)){			//dinner
 		openOne('new-college-house', 20-t);
+		loadMenu('new-college-house', 3);
 	}
 	if (inRange(t, 17, 21)){
 		openOne('kings-court-english-house', 21-t);
 		openOne('1920-commons', 21-t);
+		loadMenu('kings-court-english-house', 3);
+		loadMenu('1920-commons', 3);
 	}
 	if (inRange(t, 20, 22)){
 		openOne('new-college-housemealeq', 22-t);
