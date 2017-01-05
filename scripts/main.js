@@ -228,7 +228,7 @@ window.onload = function (){
     	dataType: "xml",
     	success:function(xml) {
         var result = $(xml).find("cafe[name=1920-commons]").children();
-        alert(result);
+        console.log(result);
     }
 });
 
