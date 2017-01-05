@@ -207,8 +207,6 @@ window.onload = function (){
     var t = d.getHours();
     var w = d.getDay();
 
-    addToMenu("commons", "crap and more");
-
 	t = t+(m/60);
 
 //	console.log(t);
@@ -223,6 +221,16 @@ window.onload = function (){
 		case 6 : saturdayTimes(t);
 		}
 	} 
+
+	$.ajax({
+		type: "GET",
+    	url:'data/meals.xml',
+    	dataType: "xml",
+    	success:function(xml) {
+        var result = $(xml).find("cafe[name=1920-commons]").children();
+        alert(result);
+    }
+});
 
 
 });
