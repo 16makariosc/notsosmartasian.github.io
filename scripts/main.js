@@ -192,8 +192,8 @@ window.onload = function (){
 		toggleElement('1920-commonsmenu');
 	}, false);
 
-	document.getElementById('kceh').addEventListener('click', function(){
-		toggleElement('kcehmenu');
+	document.getElementById('kings-court-english-house').addEventListener('click', function(){
+		toggleElement('kings-court-english-housemenu');
 	}, false);
 
 	document.getElementById('new-college-house').addEventListener('click', function(){
