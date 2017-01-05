@@ -68,22 +68,25 @@ function loadMenu(id, meal){
 }
 
 function fridayTimes(t){
-	if (inRange(t, 7.5, 10)){
+	if (inRange(t, 7.5, 10)){						//breakfast
 		openOne('new-college-house', 10-t);
+		loadMenu('new-college-house', 1);
 	}
 	if (inRange(t, 8, 10)){
 		openOne('mcclelland', 10-t);
+		loadMenu('ncclelland', 1);
 	}
 	if (inRange(t, 8, 15)){
 		openOne('accenture', 15-t);
 	}
 	if (inRange(t, 8.5, 10.5)){
 		openOne('kings-court-english-house', 10.5-t);
+		loadMenu('kings-court-english-house', )
 	}
 	if (inRange(t, 9, 16)){
 		openOne('new-college-houseretail', 16-t);
 	}
-	if (inRange(t, 11, 17)){
+	if (inRange(t, 11, 17)){					//lunch
 		openOne('houston-market', 17-t);
 	}
 	if (inRange(t, 11, 20)){
@@ -94,38 +97,51 @@ function fridayTimes(t){
 		openOne('kings-court-english-house', 14-t);
 		openOne('1920-commons', 14-t);
 		openOne('mcclelland', 14-t);
+		loadMenu('new-college-house', 2);
+		loadMenu('kings-court-english-house', 2);
+		loadMenu('1920-commons', 2);
+		loadMenu('mcclelland', 2);
 	}
-	if (inRange(t, 17, 19)){
+	if (inRange(t, 17, 19)){ 					//dinner
 		openOne('new-college-house', 19-t);
+		loadMenu('new-college-house', 3);
 	}
 	if (inRange(t, 17, 19.5)){
 		openOne('1920-commons', 19.5-t);
+		loadMenu('1920-commons', 3);
 	}
 	if (inRange(t, 17, 21)){
 		openOne('kings-court-english-house', 21-t);
+		loadMenu('kings-court-english-house', 3);
 	}
 }
 
 function saturdayTimes(t){
-	if (inRange(t, 9, 16)){
+	if (inRange(t, 9, 16)){				//brunch AKA meal 1
 		openOne('new-college-houseretail', 16-t);
 	}
 	if (inRange(t, 11, 15)){
 		openOne('new-college-house', 15-t);
 		openOne('1920-commons', 15-t);
+		loadMenu('new-college-house', 1);
+		loadMenu('1920-commons', 1);
 	}
-	if (inRange(t, 17, 19)){
+	if (inRange(t, 17, 19)){			//dinner AKA meal 2
 		openOne('new-college-house', 19-t);
+		loadMenu('new-college-house', 2);
 	}
 	if (inRange(t, 17, 19.5)){
 		openOne('1920-commons', 19.5-t);
+		loadMenu('1920-commons', 2);
 	}
 }
 
 function sundayTimes(t){
-	if (inRange(t, 11, 15)){
+	if (inRange(t, 11, 15)){			//brunch
 		openOne('new-college-house', 15-t);
 		openOne('1920-commons', 15-t);
+		loadMenu('new-college-house', 1);
+		loadMenu('1920-commons', 1);
 	}
 	if (inRange(t, 11, 22)){
 		openOne('frontera', 22-t);
@@ -133,9 +149,10 @@ function sundayTimes(t){
 	if (inRange(t, 12, 19)){
 		openOne('houston-market', 19-t);
 	}
-	if (inRange(t, 17, 20)){
+	if (inRange(t, 17, 20)){			//dinner 
 		openOne('new-college-house', 20-t);
 		openOne('1920-commons', 20-t);
+		loadMenu('new-college-house', )
 	}
 	if (inRange(t, 20, 23.983)){
 		openOne('mcclelland', 23.983-t);
