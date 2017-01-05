@@ -60,7 +60,9 @@ function printMenu(id, meal){
     	dataType: "xml",
     	success:function(xml) {
         	var result = $(xml).find("cafe[name=" + id +"]").find("meal[name=meal" + meal+"]").children();
-        	console.log(result);
+        	result.each(function(){
+        		console.log($(this).text());
+        	});
     	}
 	});
 }
