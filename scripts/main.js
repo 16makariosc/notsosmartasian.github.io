@@ -227,7 +227,7 @@ window.onload = function (){
     	url:'data/meals.xml',
     	dataType: "xml",
     	success:function(xml) {
-        var result = $(xml).find("cafe[name=1920-commons]").children();
+        var result = $(xml).find("cafe[name=1920-commons]").children().text();
         console.log(result);
     }
 });
