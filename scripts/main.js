@@ -69,7 +69,7 @@ function loadMenu(id, meal){
 
 function fridayTimes(t){
 	if (inRange(t, 7.5, 10)){
-		openOne('nch', 10-t);
+		openOne('new-college-house', 10-t);
 	}
 	if (inRange(t, 8, 10)){
 		openOne('mcclelland', 10-t);
@@ -78,64 +78,64 @@ function fridayTimes(t){
 		openOne('accenture', 15-t);
 	}
 	if (inRange(t, 8.5, 10.5)){
-		openOne('kceh', 10.5-t);
+		openOne('kings-court-english-house', 10.5-t);
 	}
 	if (inRange(t, 9, 16)){
-		openOne('nchretail', 16-t);
+		openOne('new-college-houseretail', 16-t);
 	}
 	if (inRange(t, 11, 17)){
-		openOne('houston', 17-t);
+		openOne('houston-market', 17-t);
 	}
 	if (inRange(t, 11, 20)){
 		openOne('frontera', 20-t);
 	}
 	if (inRange(t, 11, 14)){
-		openOne('nch', 14-t);
-		openOne('kceh', 14-t);
-		openOne('commons', 14-t);
+		openOne('new-college-house', 14-t);
+		openOne('kings-court-english-house', 14-t);
+		openOne('1920-commons', 14-t);
 		openOne('mcclelland', 14-t);
 	}
 	if (inRange(t, 17, 19)){
-		openOne('nch', 19-t);
+		openOne('new-college-house', 19-t);
 	}
 	if (inRange(t, 17, 19.5)){
-		openOne('commons', 19.5-t);
+		openOne('1920-commons', 19.5-t);
 	}
 	if (inRange(t, 17, 21)){
-		openOne('kceh', 21-t);
+		openOne('kings-court-english-house', 21-t);
 	}
 }
 
 function saturdayTimes(t){
 	if (inRange(t, 9, 16)){
-		openOne('nchretail', 16-t);
+		openOne('new-college-houseretail', 16-t);
 	}
 	if (inRange(t, 11, 15)){
-		openOne('nch', 15-t);
-		openOne('commons', 15-t);
+		openOne('new-college-house', 15-t);
+		openOne('1920-commons', 15-t);
 	}
 	if (inRange(t, 17, 19)){
-		openOne('nch', 19-t);
+		openOne('new-college-house', 19-t);
 	}
 	if (inRange(t, 17, 19.5)){
-		openOne('commons', 19.5-t);
+		openOne('1920-commons', 19.5-t);
 	}
 }
 
 function sundayTimes(t){
 	if (inRange(t, 11, 15)){
-		openOne('nch', 15-t);
-		openOne('commons', 15-t);
+		openOne('new-college-house', 15-t);
+		openOne('1920-commons', 15-t);
 	}
 	if (inRange(t, 11, 22)){
 		openOne('frontera', 22-t);
 	}
 	if (inRange(t, 12, 19)){
-		openOne('houston', 19-t);
+		openOne('houston-market', 19-t);
 	}
 	if (inRange(t, 17, 20)){
-		openOne('nch', 20-t);
-		openOne('commons', 20-t);
+		openOne('new-college-house', 20-t);
+		openOne('1920-commons', 20-t);
 	}
 	if (inRange(t, 20, 23.983)){
 		openOne('mcclelland', 23.983-t);
@@ -144,7 +144,7 @@ function sundayTimes(t){
 
 function weekdayTimes(t){
 	if (inRange(t, 7.5, 10)){
-		openOne('nch', 10-t);
+		openOne('new-college-house', 10-t);
 	}
 	if (inRange(t, 8, 10)){
 		openOne('mcclelland', 10-t);
@@ -153,32 +153,32 @@ function weekdayTimes(t){
 		openOne('accenture', 18-t);
 	}
 	if (inRange(t, 8.5, 10.5)){
-		openOne('kceh', 10.5-t);
+		openOne('kings-court-english-house', 10.5-t);
 	}
 	if (inRange(t, 9, 22)){
-		openOne('nchretail', 22-t);
+		openOne('new-college-houseretail', 22-t);
 	}
 	if (inRange(t, 11, 19)){
-		openOne('houston', 19-t);
+		openOne('houston-market', 19-t);
 	}
 	if (inRange(t, 11, 22)){
 		openOne('frontera', 22-t);
 	}
 	if (inRange(t, 11, 14)){
-		openOne('nch', 14-t);
-		openOne('kceh', 14-t);
-		openOne('commons', 14-t);
+		openOne('new-college-house', 14-t);
+		openOne('kings-court-english-house', 14-t);
+		openOne('1920-commons', 14-t);
 		openOne('mcclelland', 14-t);
 	}
 	if (inRange(t, 17, 20)){
-		openOne('nch', 20-t);
+		openOne('new-college-house', 20-t);
 	}
 	if (inRange(t, 17, 21)){
-		openOne('kceh', 21-t);
-		openOne('commons', 21-t);
+		openOne('kings-court-english-house', 21-t);
+		openOne('1920-commons', 21-t);
 	}
 	if (inRange(t, 20, 22)){
-		openOne('nchmealeq', 22-t);
+		openOne('new-college-housemealeq', 22-t);
 	}
 	if (inRange(t, 20, 23.983)){
 		openOne('mcclelland', 23.983-t);
@@ -188,20 +188,20 @@ function weekdayTimes(t){
 
 window.onload = function (){
 
-	document.getElementById('commons').addEventListener('click', function(){
-		toggleElement('commonsmenu');
+	document.getElementById('1920-commons').addEventListener('click', function(){
+		toggleElement('1920-commonsmenu');
 	}, false);
 
 	document.getElementById('kceh').addEventListener('click', function(){
 		toggleElement('kcehmenu');
 	}, false);
 
-	document.getElementById('nch').addEventListener('click', function(){
-		toggleElement('nchmenu');
+	document.getElementById('new-college-house').addEventListener('click', function(){
+		toggleElement('new-college-housemenu');
 	}, false);
 
-	document.getElementById('houston').addEventListener('click', function(){
-		toggleElement('houstonmenu');
+	document.getElementById('houston-market').addEventListener('click', function(){
+		toggleElement('houston-marketmenu');
 	}, false);
 
 	document.getElementById('mcclelland').addEventListener('click', function(){
