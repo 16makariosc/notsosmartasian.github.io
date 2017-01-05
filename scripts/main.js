@@ -263,7 +263,5 @@ window.onload = function (){
 		case 6 : saturdayTimes(t);
 		}
 
-		loadMenu("1920-commons", 1);
-
 	} 
 });
