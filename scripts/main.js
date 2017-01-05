@@ -53,6 +53,17 @@ function inRange(x, min, max){
 	return (x > min && x < max);
 }
 
+function printMenu(id, meal){
+	$.ajax({
+		type: "GET",
+    	url:'data/meals.xml',
+    	dataType: "xml",
+    	success:function(xml) {
+        var result = $(xml).find("cafe[name=" + id +"]").find("meal[name=meal " + str(meal)).text();
+        console.log(result);
+    }
+}
+
 function fridayTimes(t){
 	if (inRange(t, 7.5, 10)){
 		openOne('nch', 10-t);
@@ -220,16 +231,10 @@ window.onload = function (){
 		case 5 : fridayTimes(t); break;
 		case 6 : saturdayTimes(t);
 		}
-	} 
 
-	$.ajax({
-		type: "GET",
-    	url:'data/meals.xml',
-    	dataType: "xml",
-    	success:function(xml) {
-        var result = $(xml).find("cafe[name=1920-commons]").children().text();
-        console.log(result);
-    }
+		printMenu("1920-commons", 1);
+
+	} 
 });
 
 
