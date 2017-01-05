@@ -53,7 +53,7 @@ function inRange(x, min, max){
 	return (x > min && x < max);
 }
 
-function getMenu(id, meal){
+function loadMenu(id, meal){
 	$.ajax({
 		type: "GET",
     	url:'data/meals.xml',
@@ -235,7 +235,7 @@ window.onload = function (){
 		case 6 : saturdayTimes(t);
 		}
 
-		printMenu("1920-commons", 1);
+		loadMenu("1920-commons", 1);
 
 	} 
 });
