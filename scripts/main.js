@@ -53,7 +53,7 @@ function inRange(x, min, max){
 	return (x > min && x < max);
 }
 
-function printMenu(id, meal){
+function getMenu(id, meal){
 	$.ajax({
 		type: "GET",
     	url:'data/meals.xml',
@@ -61,7 +61,7 @@ function printMenu(id, meal){
     	success:function(xml) {
         	var result = $(xml).find("cafe[name=" + id +"]").find("meal[name=meal" + meal+"]").children();
         	result.each(function(){
-        		console.log($(this).text());
+        		addToMenu(id, $(this).text());
         	});
     	}
 	});
