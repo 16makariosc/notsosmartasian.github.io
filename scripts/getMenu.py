@@ -19,11 +19,11 @@ for cafe in cafes:
 	cafeElement = ET.SubElement(root, "cafe", name=cafe)
 	for meal in meals:
 		print "getting " + cafe + " menu " + str(meal)
-		mealElement = ET.SubElement(cafeElement, "meal", name="meal " + str(meal))	
+		mealElement = ET.SubElement(cafeElement, "meal", name="meal" + str(meal))	
 		menu = getMenu(cafe, meal)
 		#for item in menu:
 		for item in meals:
-			ET.SubElement(mealElement, "item").text = cafe + " " + str(item)
+			ET.SubElement(mealElement, "item").text = cafe + str(item)
 
 tree = ET.ElementTree(root)
 tree.write("../data/meals.xml")
