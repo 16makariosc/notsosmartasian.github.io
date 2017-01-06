@@ -26,4 +26,4 @@ for cafe in cafes:
 			ET.SubElement(mealElement, "item").text = cafe + str(item) + str(meal)
 
 tree = ET.ElementTree(root)
-tree.write("../data/meals.xml")
+tree.write("~/Documents/DineTrack/data/meals.xml")
