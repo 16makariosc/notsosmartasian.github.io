@@ -1,5 +1,6 @@
 import xml.etree.cElementTree as ET
 from selenium import webdriver
+from time import localtime, strftime
 
 #cafe: 1920-commons; kings-court-english-house; new-college-house; houston-market
 #meals: 1 = first meal of the day, 2 = second meal of the day, 3 = third meal of the day
@@ -14,6 +15,7 @@ def getMenu(cafe, meal):
 	return content
 
 root = ET.Element("menus")
+timeElement = ET.SubElement(root, "timerun").text = strftime("%Y-%m-%d %H:%M:%S", localtime())
 
 for cafe in cafes:
 	cafeElement = ET.SubElement(root, "cafe", name=cafe)
@@ -21,9 +23,8 @@ for cafe in cafes:
 		print "getting " + cafe + " menu " + str(meal)
 		mealElement = ET.SubElement(cafeElement, "meal", name="meal" + str(meal))	
 		menu = getMenu(cafe, meal)
-		#for item in menu:
-		for item in meals:
-			ET.SubElement(mealElement, "item").text = cafe + str(item) + str(meal)
+		for item in menu:
+			ET.SubElement(mealElement, "item").text = item
 
 tree = ET.ElementTree(root)
 tree.write("/home/makarios/Documents/DineTrack/data/meals.xml")
