@@ -1,9 +1,11 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskannada.css);
 
-html{
+html, body{
     font-family: 'Noto Sans Kannada', sans-serif;
     overflow-x: hidden;
     max-width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 ul{
@@ -25,14 +27,6 @@ li{
 
 .closed{
 	background-color: #F44336;
-}
-
-body {
-	left: 0px;
-	top: 0px;
-	margin: 0px;
-	border: 0px;
-	padding: 0px;
 }
 
 .hidden{
