@@ -85,6 +85,7 @@ button{
 	padding: 1%;
 	font-size: 100%;
 	word-wrap: break-word;
+	max-width: 100%;
 }
 
 .small{
