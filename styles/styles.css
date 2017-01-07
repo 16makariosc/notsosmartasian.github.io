@@ -84,6 +84,7 @@ button{
 	text-align: center;
 	padding: 1%;
 	font-size: 100%;
+	word-wrap: break-word;
 }
 
 .small{
