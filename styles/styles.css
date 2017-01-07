@@ -89,3 +89,7 @@ button{
 .small{
 	font-size: 100%;
 }
+
+footer{
+	overflow:none;
+}
