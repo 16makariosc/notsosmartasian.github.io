@@ -3,7 +3,6 @@
 html{
     font-family: 'Noto Sans Kannada', sans-serif;
     overflow-x: hidden;
-    white-space: nowrap;
 }
 
 ul{
@@ -84,8 +83,6 @@ button{
 	text-align: center;
 	padding: 1%;
 	font-size: 100%;
-	word-wrap: break-word;
-	max-width: 100%;
 }
 
 .small{
