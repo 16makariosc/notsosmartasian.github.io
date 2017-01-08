@@ -10,7 +10,7 @@ meals = [1, 2, 3]
 
 def getMenu(cafe, meal): 
 	driver = webdriver.PhantomJS()
-	driver.get('http://university-of-pennsylvania.cafebonappetit.com/cafe/'+cafe+'/2017-01-11/')
+	driver.get('http://university-of-pennsylvania.cafebonappetit.com/cafe/'+cafe+'/')
 	content = driver.find_elements_by_css_selector('section#panel-daypart-menu-'+str(meal)+' .bg.dotted-leader-content')
 	return content
 
@@ -20,7 +20,7 @@ timeElement = ET.SubElement(root, "timerun").text = strftime("%Y-%m-%d %H:%M:%S"
 for cafe in cafes:
 	cafeElement = ET.SubElement(root, "cafe", name=cafe)
 	for meal in meals:
-		print "getting " + cafe + " menu " + str(meal)
+		print "* * * getting " + cafe + " menu " + str(meal) + " * * *\n"
 		mealElement = ET.SubElement(cafeElement, "meal", name="meal" + str(meal))	
 		menu = getMenu(cafe, meal)
 		for item in menu:
