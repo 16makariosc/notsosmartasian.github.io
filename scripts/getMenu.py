@@ -10,7 +10,7 @@ meals = [1, 2, 3]
 
 def getMenu(cafe, meal): 
 	driver = webdriver.PhantomJS()
-	driver.get('http://university-of-pennsylvania.cafebonappetit.com/cafe/'+cafe+'/')
+	driver.get('http://university-of-pennsylvania.cafebonappetit.com/cafe/'+cafe+'/2017-01-11/')
 	content = driver.find_elements_by_css_selector('section#panel-daypart-menu-'+str(meal)+' .bg.dotted-leader-content')
 	return content
 
@@ -24,7 +24,8 @@ for cafe in cafes:
 		mealElement = ET.SubElement(cafeElement, "meal", name="meal" + str(meal))	
 		menu = getMenu(cafe, meal)
 		for item in menu:
-			ET.SubElement(mealElement, "item").text = item
+			print item.text
+			ET.SubElement(mealElement, "item").text = item.text
 
 tree = ET.ElementTree(root)
 tree.write("/home/makarios/Documents/DineTrack/data/meals.xml")

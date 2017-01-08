@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html>
-
 <head>
+
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"
   			integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
@@ -17,6 +18,8 @@
   ga('send', 'pageview');
 
 </script>
+
+
 	<title>Penn DineTime</title>
 	<meta name  = "author" conent = "Makarios Chung"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
