@@ -157,6 +157,7 @@ function sundayTimes(t){
 	}
 	if (inRange(t, 20, 23.983)){
 		openOne('mcclelland', 23.983-t);
+		loadMenu('mcclelland', 3);
 	}
 }
 
@@ -210,6 +211,7 @@ function weekdayTimes(t){
 	}
 	if (inRange(t, 20, 23.983)){
 		openOne('mcclelland', 23.983-t);
+		loadMenu('mcclelland', 3);
 	}
 }
 

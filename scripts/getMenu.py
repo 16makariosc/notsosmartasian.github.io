@@ -5,7 +5,7 @@ from time import localtime, strftime
 #cafe: 1920-commons; kings-court-english-house; new-college-house; houston-market
 #meals: 1 = first meal of the day, 2 = second meal of the day, 3 = third meal of the day
 
-cafes = ["1920-commons", "kings-court-english-house", "new-college-house", "mcclelland", "houston-market"]
+cafes = ["1920-commons", "kings-court-english-house", "new-college-house", "falk-dining-commons", "mcclelland", "houston-market"]
 meals = [1, 2, 3]
 
 def getMenu(cafe, meal): 
