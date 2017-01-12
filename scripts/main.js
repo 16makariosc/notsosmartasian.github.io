@@ -102,6 +102,10 @@ function fridayTimes(t){
 		loadMenu('1920-commons', 1);
 		loadMenu('mcclelland', 2);
 	}
+	if (inRange(t, 11.5, 14)){
+		openOne('falk-dining-commons', 14-t);
+		loadMenu('falk-dining-commons', 1);
+	}
 	if (inRange(t, 17, 19)){ 					//dinner
 		openOne('new-college-house', 19-t);
 		loadMenu('new-college-house', 3);
@@ -114,6 +118,10 @@ function fridayTimes(t){
 		openOne('kings-court-english-house', 21-t);
 		loadMenu('kings-court-english-house', 3);
 	}
+	if (inRange(t, 20, 22)){
+		openOne('falk-dining-commons', 22-t);
+		loadMenu('falk-dining-commons', 2);
+	}
 }
 
 function saturdayTimes(t){
@@ -125,6 +133,10 @@ function saturdayTimes(t){
 		openOne('1920-commons', 15-t);
 		loadMenu('new-college-house', 1);
 		loadMenu('1920-commons', 1);
+	}
+	if (inRange(t, 11.5, 14)){
+		openOne('falk-dining-commons', 14-t);
+		loadMenu('falk-dining-commons', 1);
 	}
 	if (inRange(t, 17, 19)){			//dinner AKA meal 2
 		openOne('new-college-house', 19-t);
@@ -196,6 +208,10 @@ function weekdayTimes(t){
 		loadMenu('1920-commons', 1);
 		loadMenu('mcclelland', 2);
 	}
+	if (inRange(t, 11.5, 14)){
+		openOne('falk-dining-commons', 14-t);
+		loadMenu('falk-dining-commons', 1);
+	}
 	if (inRange(t, 17, 20)){			//dinner
 		openOne('new-college-house', 20-t);
 		loadMenu('new-college-house', 3);
@@ -205,6 +221,10 @@ function weekdayTimes(t){
 		openOne('1920-commons', 21-t);
 		loadMenu('kings-court-english-house', 3);
 		loadMenu('1920-commons', 2);
+	}
+	if (inRange(t, 17.5, 19.5)){
+		openOne('falk-dining-commons', 19.5-t);
+		loadMenu('falk-dining-commons', 2);
 	}
 	if (inRange(t, 20, 22)){
 		openOne('new-college-housemealeq', 22-t);
@@ -232,6 +252,10 @@ window.onload = function (){
 
 	document.getElementById('houston-market').addEventListener('click', function(){
 		toggleElement('houston-marketmenu');
+	}, false);
+
+	document.getElementById('falk-dining-commons').addEventListener('click', function(){
+		toggleElement('falk-dining-commonsmenu');
 	}, false);
 
 	document.getElementById('mcclelland').addEventListener('click', function(){
