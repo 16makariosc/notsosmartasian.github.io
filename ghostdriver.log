@@ -1,19 +1,8 @@
-[INFO  - 2017-01-14T06:47:17.777Z] GhostDriver - Main - running on port 42998
-[INFO  - 2017-01-14T06:47:18.657Z] Session [4ae4e9e0-da25-11e6-a5b8-db31c65461bd] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2017-01-14T06:47:18.657Z] Session [4ae4e9e0-da25-11e6-a5b8-db31c65461bd] - page.customHeaders:  - {}
-[INFO  - 2017-01-14T06:47:18.657Z] Session [4ae4e9e0-da25-11e6-a5b8-db31c65461bd] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2017-01-14T06:47:18.657Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 4ae4e9e0-da25-11e6-a5b8-db31c65461bd
-[INFO  - 2017-01-14T06:51:50.981Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2017-01-14T06:56:50.981Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2017-01-14T07:01:50.981Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2017-01-14T07:06:50.981Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2017-01-14T07:11:50.981Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2017-01-14T07:16:50.982Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2017-01-14T07:21:50.982Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2017-01-14T15:44:12.841Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2017-01-14T15:49:12.841Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2017-01-14T15:54:12.841Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2017-01-14T15:59:12.841Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-17T07:00:44.219Z] GhostDriver - Main - running on port 57123
+[INFO  - 2017-01-17T07:00:45.099Z] Session [aacf7280-dc82-11e6-b824-256a1812ce94] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-17T07:00:45.100Z] Session [aacf7280-dc82-11e6-b824-256a1812ce94] - page.customHeaders:  - {}
+[INFO  - 2017-01-17T07:00:45.100Z] Session [aacf7280-dc82-11e6-b824-256a1812ce94] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-17T07:00:45.100Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: aacf7280-dc82-11e6-b824-256a1812ce94
 events.js:141
       throw er; // Unhandled 'error' event
       ^
