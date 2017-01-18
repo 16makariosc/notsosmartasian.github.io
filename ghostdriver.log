@@ -1,8 +1,8 @@
-[INFO  - 2017-01-17T07:00:44.219Z] GhostDriver - Main - running on port 57123
-[INFO  - 2017-01-17T07:00:45.099Z] Session [aacf7280-dc82-11e6-b824-256a1812ce94] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2017-01-17T07:00:45.100Z] Session [aacf7280-dc82-11e6-b824-256a1812ce94] - page.customHeaders:  - {}
-[INFO  - 2017-01-17T07:00:45.100Z] Session [aacf7280-dc82-11e6-b824-256a1812ce94] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2017-01-17T07:00:45.100Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: aacf7280-dc82-11e6-b824-256a1812ce94
+[INFO  - 2017-01-18T06:40:18.863Z] GhostDriver - Main - running on port 34805
+[INFO  - 2017-01-18T06:40:19.627Z] Session [fac8db70-dd48-11e6-adea-77240514e49b] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-18T06:40:19.627Z] Session [fac8db70-dd48-11e6-adea-77240514e49b] - page.customHeaders:  - {}
+[INFO  - 2017-01-18T06:40:19.627Z] Session [fac8db70-dd48-11e6-adea-77240514e49b] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-18T06:40:19.627Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: fac8db70-dd48-11e6-adea-77240514e49b
 events.js:141
       throw er; // Unhandled 'error' event
       ^
